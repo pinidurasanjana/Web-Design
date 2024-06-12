@@ -1,0 +1,113 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tutorial 4</title>
+        <style>
+            .personaldetails{
+                background-color: lightblue;
+                border-radius: 20px;
+            }
+            .bookingdetails{
+                background-color: bisque;
+                border-radius: 20px;
+            }
+            .submit{
+                background-color: darkgoldenrod;
+                border-radius: 20px;
+                text-align: right;
+                height: 30px;
+
+            }
+            h1{
+                text-align: center;
+            }
+            label{
+                float: left;
+                width: 20%;
+                margin-right: 0.5em;
+                font-weight: bold;
+            }
+            fieldset{
+                background-color: lightblue;
+                padding: 0.5em;
+                font: 80%/1 sans-serif;
+            }
+            .submit input{
+                background-color: lightblue;
+                border-radius: 10px;
+                height: 35px;
+                padding: 7px;
+                width: 70px;
+        
+                
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <h1>Hotel Reservation</h1>
+        <form>
+            <fieldset class="personaldetails">
+                <legend><h3>Personal Details</h3></legend>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="name" id="firstname" placeholder="Enter your first name">
+                <br>
+                <br>
+                <label for="surname">Surname:</label>
+                <input type="text" name="name" id="surname" placeholder="Enter your Surname">
+                <br>
+                <br>
+                <label for="email">Email address:</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                <br>
+                <br>
+                <label for="password">Setup a password:</label>
+                <input type="password" name="password" id="password" placeholder="Min 8 characters,use at least 1 caps,no special characters" size="50">
+            </fieldset>
+            <fieldset class="bookingdetails">
+                <legend><h3>Booking Details</h3></legend>
+                <label for="checkInday">CheckIn day:</label>
+                <input type="date" id="checkInday" name="CheckIn"  >
+                <br>
+                <br>
+                <label for="day">Number of days:</label>
+                <input type="number" id="day" name="days" >
+                <br>
+                <br>
+                <input type="radio" id="single" name="room">
+                <label for="single">Single Room</label>
+                <br>
+                <br>
+                <input type="radio" id="double" name="room">
+                <label for="double">Double Room</label>
+                <br>
+                <br>
+                <input type="radio" id="king" name="room">
+                <label for="king">King Room</label>
+                <br>
+                <br>
+                <label for="breakfast">Breakfast:</label>
+                <select name="Breakfast" id="breakfast">
+                    <option value="include">Include</option>
+                    <option value="not include">Not Include</option>
+                </select>
+                <br>
+                <br>
+                <label for="specialreq">Special Requirements:</label>
+                <textarea name="notes" id="specialreq" rows="5" cols="20" placeholder="Please provide any special requirements"></textarea>
+                <br>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset class="submit">
+                <input type="reset" name="reset" value="Reset">
+                <input type="submit" name="send" value="Send">
+                
+            </fieldset>
+                
+            
+        </form>
+    </body>
+</html>

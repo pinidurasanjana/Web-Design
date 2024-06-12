@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Title</title>
+    <link rel="stylesheet" href="cw.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url(screenpic.png);
+            background-size:cover ;
+        }
+
+        .mission {
+            text-align:center;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 40px;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: oblique;
+            z-index: 1;
+        }
+
+
+        .studentpics .png {
+            width: auto;
+            height: 160px;
+            filter: grayscale(20%);
+            opacity: 0.6;
+            background-color:rgba(0, 153, 255, 0.3);
+            mix-blend-mode:hard-light;
+            border: 10px solid #095318;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .studentpics{
+            position: relative;
+        }
+        .image-container {
+            position: relative;
+            display: inline-block;
+            perspective: 1000px;
+        }
+
+        .overlay-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .image-container:nth-child(1) {
+            margin-left: 1050px;
+        }
+
+        .image-container:nth-child(3) {
+            margin-left: 1050px;
+        }
+
+        ul {color: sienna;
+
+            text-align: center;
+
+            z-index: 1;
+        }
+        h2{
+            text-align:center;
+            text-decoration: wavy;
+            margin-left: 20px;
+            margin-bottom: 20px;
+
+            z-index: 1;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="logo-container">
+
+    <img src="" alt="Website Logo" class="logo">
+
+    <div class="navbar">
+        <a href="#" class="active"><b>Home</b></a>
+        <a href="#"><b>About</b></a>
+        <a href="#"><b>Gallery</b></a>
+        <a href="#"><b>Shop</b></a>
+        <a href="#"><b>Feedback</b></a>
+        <a href="#"><b>Sitemap</b></a>
+    </div>
+</div>
+
+
+<div class="mission">
+    <h2><b><i>Global Health Empowerment Foundation</i></b></h2>
+    <p>Our mission is to nurture communities with the gift of healing. Through thoughtful fundraising, we aspire to bridge the gaps in healthcare access, bringing warmth and wellness to those most in need.<br> Together, let us weave a tapestry of care, stitching hope into every life we touch.</p>
+</div>
+
+
+
+<div class="studentpics">
+
+    <div class="image-container">
+        <img src="pic1.png" alt="fgh" class="png">
+        <a href="#" class="overlay-link">student 1</a>
+    </div>
+    <div class="image-container">
+        <img src="pic6.png" alt="gh" class="png">
+        <a href="#" class="overlay-link">student 2</a>
+    </div>
+    <div class="image-container">
+        <img src="pic3.png" alt="dfg" class="png">
+        <a href="#" class="overlay-link">student 3</a>
+    </div>
+    <div class="image-container">
+        <img src="pic4.png" alt="dgyi" class="png">
+        <a href="#" class="overlay-link">student 4</a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="#">Page Editor 1</a>
+            <a href="#">Page Editor 2</a>
+            <a href="#">Page Editor 3</a>
+            <a href="#">Page Editor 4</a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+</html>

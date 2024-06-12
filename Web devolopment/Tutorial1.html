@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Splash Screen</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f0f0f0;
+		}
+
+		.splash-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		#loader {
+			width: 100px;
+			height: 100px;
+			background: url(https://giphy.com/gifs/mashable-3oEjI6SIIHBdRxXI40) no-repeat center center;
+			background-size: cover;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+
+		.redirecting {
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+<div class="splash-container">
+	<h1>Website Title</h1>
+	<p>Website Mission</p>
+	<p>Group Members:</p>
+	<ul>
+		<li>Member 1</li>
+		<li>Member 2</li>
+		<li>Member 3</li>
+		<!-- Add more members as needed -->
+	</ul>
+	<div id="loader"></div>
+	<p class="redirecting">Redirecting...</p>
+</div>
+
+<script>
+	// Redirect after 4 seconds
+	setTimeout(function() {
+		window.location.href = "home.html"; // Change to your home page URL
+	}, 4000);
+</script>
+</body>
+</html>

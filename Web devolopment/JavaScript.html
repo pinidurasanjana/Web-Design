@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script</title>
+    <script>
+        document.write("<p>Script tags can be places in the head of an HTML document.</p>")
+    </script>
+</head>
+<body>
+    <h1>The Script Tag: Example1</h1>
+    <p>Script tags can also be places in the body of an HTML document.</p>
+    <script>
+        document.write("<p>Script tags will be ignored by other browsers that do not understand them.</p>")
+        for (let counter=0;counter<10;counter++){
+            document.write("<p>");
+            document.write("Counter is: "+counter);
+            document.write("<p>")
+        }
+    </script>
+    <table>
+        <tr>
+            <th>Separate</th>
+            <th>Collapse</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: separate; border: 1px solid black;">Separate</td>
+            <td style="border-collapse: collapse; border: 1px solid black;">Collapse</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: separate; border: 1px solid black; border-spacing: 10px;">Separate (spacing)</td>
+            <td style="border-collapse: collapse; border: 1px solid black;">Collapse</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
